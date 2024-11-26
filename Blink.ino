@@ -25,11 +25,11 @@ void	FT_LedRfr	(void)
 	static	uint32_t	LIndx	=1;
 	/////////////////
 	LIndx<<=1;
-  if ( LIndx  ==0)
-    LIndx=1;
+	if ( LIndx  ==0)
+		LIndx=1;
 	/////////////////
 	if	( LLedId	&LIndx)
-    digitalWrite(IO_PIN_LED, LOW);
+		digitalWrite(IO_PIN_LED, LOW);
 	else
-    digitalWrite(IO_PIN_LED, HIGH);
+		digitalWrite(IO_PIN_LED, HIGH);
 }
